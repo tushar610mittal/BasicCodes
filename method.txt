@@ -1,0 +1,23 @@
+    public class Methods{
+    public void test(){
+        System.out.println("test pass:");
+    }
+    public int add(){
+        System.out.println("Addition starts:");
+        int a=10, b=20;
+        int c= a+b;
+        return c;
+    }
+    public void multiplication(int x, int y){
+        System.out.println("Multiplication starts:");
+        int z = x*y;
+        System.out.println(z);
+    }
+    public static void main(String[] args){
+        Methods m = new Methods();
+        m.test();
+        int d= m.add();
+        System.out.println(d);
+        m.multiplication(10,30);
+    }
+}

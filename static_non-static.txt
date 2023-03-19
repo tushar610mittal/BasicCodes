@@ -1,0 +1,22 @@
+public class A{
+    static int i= 25;
+    int j= 20, k=30;
+    public void display()  //non-static method
+    {
+        System.out.println("The value of j and k are:" +j +" " +k);
+    }
+    public static void show()  // static method
+    {
+        System.out.println("The static value is:" +i);
+    }
+    public static void main(String[] args)
+    {
+        A s = new A();
+        s.display();
+        System.out.println(s.j);
+        show();   //calling of static method
+        A.show();    //calling of static method
+        System.out.println(i);    //calling of static variable
+        System.out.println(A.i);   //calling of static variable
+    }
+}
